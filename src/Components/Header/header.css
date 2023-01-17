@@ -1,0 +1,20 @@
+
+
+
+
+.common__section{
+    background: linear-gradient(rgba(255, 255, 255, 0.082),rgba(0, 0, 0, 0.87)),
+    url('./banner.png') no-repeat center center;
+    background-size: cover;
+    padding: 150px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.common__section h1{
+    color: aliceblue;
+    font-weight: 600;
+}

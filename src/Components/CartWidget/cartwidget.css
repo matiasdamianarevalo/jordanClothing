@@ -1,0 +1,44 @@
+.nav__icons {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+  }
+  
+  .nav__icons span i {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .cart__icon,
+  .fav__icon {
+    position: relative;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 16%;
+    right: -40%;
+    width: 18px;
+    height: 18px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    z-index: 10;
+  }
+  
+  .nav__icons span img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .nav__icons a{
+    text-decoration: none;
+  }
