@@ -10,7 +10,7 @@ function Item(props) {
 
   return (
     <div className="text-center">
-      <Card style={{ width: "24rem" }}>
+      <Card style={{ width: "18rem" }}>
         <motion.img
           className="p-2"
           whileHover={{ scale: 0.9 }}
