@@ -21,7 +21,7 @@ const ItemDetail = ({ product }) => {
 
   return (
     <>
-    <HeaderSection/>
+    <HeaderSection title="Description Product"/>
       <Container>
         <Row>
           <Col lg="6" md="10" xs="12" className="p-5">
@@ -68,9 +68,9 @@ const ItemDetail = ({ product }) => {
                 <ItemCount onAdd={onAdd} />
 
                 <Link to="/Cart" onAdd={addCart}>
-                  <button className="buy__btn m-4 rounded-circle">
+                  <span className="cart">
                     <i class="ri-shopping-cart-line"></i>
-                  </button>
+                  </span>
                 </Link>
               </div>
             </div>

@@ -1,3 +1,6 @@
+*{
+  text-decoration: none;
+}
 .product__detail {
   margin-top: 50px;
 }
@@ -84,4 +87,16 @@
     font-size: 1.8rem;
     font-weight: 600;
     margin-top: 30px;
+}
+
+
+.cart{
+  font-size: 35px;
+  padding-left: 50px;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.cart i{
+  text-decoration: none;
 }

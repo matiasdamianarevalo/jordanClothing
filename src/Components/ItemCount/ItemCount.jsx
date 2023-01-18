@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import './itemcount.css'
 
 const ItemCount = ({ onAdd }) => {
   const [count, setCount] = useState(0);
@@ -14,21 +15,17 @@ const ItemCount = ({ onAdd }) => {
 
   return (
     <div className="text-center">
-      <button
-        className="buy__btn bg-danger rounded-circle"
+      <span
+        className="add"
         key={count}
         onClick={decrease}
-      >
-        -
-      </button>
-      <span className="buy__btn m-2">{count}</span>
-      <button
-        className="buy__btn bg-danger rounded-circle"
+      ><i class="ri-indeterminate-circle-fill"></i>
+      </span>
+      <span className="count m-3">{count}</span>
+      <span className="add"
         key={count >= 1}
         onClick={increase}
-      >
-        +
-      </button>
+      ><i class="ri-add-circle-fill"></i></span>
       <div>
         <motion.button
           whileTap={{ scale: 1.1 }}

@@ -22,7 +22,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-      <HeaderSection/>
+      <HeaderSection title="LIST PRODUCTS"/>
       <ItemList lista={productList} />{" "}
     </>
   );

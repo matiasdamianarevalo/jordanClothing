@@ -39,8 +39,8 @@
 .menu {
   display: flex;
   align-items: center;
-  column-gap: 2.7rem;
-  margin-bottom: 0px;
+  column-gap: 2rem;
+  margin-left: -8rem;
 }
 
 .nav__item a {
@@ -111,7 +111,7 @@
   background: #fff;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 990px) {
   .navigation {
     position: fixed;
     top: 0;

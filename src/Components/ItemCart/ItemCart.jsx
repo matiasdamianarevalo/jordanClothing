@@ -46,9 +46,7 @@ const ItemCart = ({ product }) => {
               </div>
               <div className="d-flex align-items-center gap-3">
                 <span className="product__price">$ {product.price}</span>
-                <span className="product__price">
-                  {" "}
-                  {product.quantity}=Unit,
+                <span className="product__price">- {product.quantity}u,
                 </span>
                 <span className="product__price">
                   Subtotal= $ {product.quantity * product.price}

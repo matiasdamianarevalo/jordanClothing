@@ -10,24 +10,29 @@ const Cart = () => {
 
   if (cart.length === 0) {
     return (
-      <div className="items__later text-center">
-        <h3 className="text-dark">No items</h3>
-        <Link to="/">
-          <button className="buy__btn">Back to home</button>
-        </Link>
-      </div>
+      <>
+        <HeaderSection title={"Cart"} />
+        <div className="items__later text-center">
+          <h3 className="text-dark">No items</h3>
+          <Link to="/">
+            <button className="buy__btn">Back to home</button>
+          </Link>
+        </div>
+      </>
     );
   }
 
   return (
     <>
-      <HeaderSection />
+      <HeaderSection title={"Cart"} />
       {cart.map((product) => (
         <ItemCart key={product.id} product={product} />
       ))}
       <div className="text-center p-4">
-      <h2>TOTAL= $ {totalPrice()}</h2>
-      <Link to="/CheckOut"> <button className="buy__btn">Proceed to checkout</button>  </Link>
+        <h2>TOTAL= $ {totalPrice()}</h2>
+        <Link to="/CheckOut">
+          <button className="buy__btn">Proceed to checkout</button>{" "}
+        </Link>
       </div>
     </>
   );

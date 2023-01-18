@@ -2,7 +2,7 @@ import "./NavBar.css";
 import { CartWidget } from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
 import logo from "./eco-logo.png";
-import { Container, Row } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import { motion } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 import { useCartContext } from "../../Context/CartContext";
@@ -37,6 +37,7 @@ function NavBar() {
       <header className="header" ref={headerRef}>
         <Container>
           <Row>
+            <Col>
             <div className="nav__wrapper">
               <div className="logo">
                 <img src={logo} alt="logo" />
@@ -66,7 +67,7 @@ function NavBar() {
                     <CartWidget />
                   </motion.span>
                 </Link>
-                <span className="text-dark">= {totalProducts()||"0"} Unit </span>
+                <span className="text-dark">{totalProducts}</span>
                 <div className="mobile__menu">
                   <span onClick={menuToggle}>
                     <i class="ri-menu-2-line"></i>
@@ -74,6 +75,7 @@ function NavBar() {
                 </div>
               </div>
             </div>
+            </Col>
           </Row>
         </Container>
       </header>
