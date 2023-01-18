@@ -46,7 +46,7 @@ const data = [
         title: "AIR JORDAN XXX SAMPLE WHITE/GOLD-BLACK",
         price: 106,
         categoryId: "jordan",
-        pictureUrl: 'https://www.clipartmax.com/png/middle/213-2135188_github-and-go-github-octocat.png'
+        pictureUrl: 'https://static.nike.com/a/images/c4hxqobnrsaz7mtsi6db/black-gym-red-muslin.png'
     },
     {
         id: "07",
