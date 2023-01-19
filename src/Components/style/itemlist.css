@@ -33,11 +33,11 @@
     align-items: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    padding-left: 2.5rem;
+    
     width: 100%;
   }
-/*   @media only screen and (max-width: 990px) {
+@media only screen and (max-width: 990px) {
     .productos {
-
-
-  } */
+padding-left: 2.5rem;
+    }
+  } 
