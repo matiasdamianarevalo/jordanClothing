@@ -26,19 +26,18 @@
   .productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 4rem 0rem;
+    gap: 4rem 4rem;
     box-sizing: border-box;
     text-align: center;
     justify-content: space-between;
     align-items: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    padding-left: 5rem;
     width: 100%;
   }
-  @media only screen and (max-width: 990px) {
+/*   @media only screen and (max-width: 990px) {
     .productos {
- 
- width: auto;
-    }
 
-  }
+
+  } */
