@@ -25,24 +25,20 @@
   }
   .productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 4rem 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 4rem 0rem;
     box-sizing: border-box;
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    width: 100%;
   }
   @media only screen and (max-width: 990px) {
     .productos {
  
-      
-      text-align: center;
-      justify-content: space-between;
-      align-items: center;
-
+ width: auto;
     }
 
   }
