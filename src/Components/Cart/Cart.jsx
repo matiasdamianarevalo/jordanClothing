@@ -12,10 +12,10 @@ const Cart = () => {
     return (
       <>
         <HeaderSection title={"Cart"} />
-        <div className="items__later text-center">
+        <div className="items__later text-center p-5">
           <h3 className="text-dark">No items</h3>
           <Link to="/">
-            <button className="buy__btn">Back to home</button>
+            <button className="buy__btn m-3">Back to home</button>
           </Link>
         </div>
       </>

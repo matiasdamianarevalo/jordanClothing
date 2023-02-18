@@ -42,15 +42,19 @@ function CheckOut() {
           <h4 className="p-5">Thank you for choosing us!</h4>
         </div>
       ) : (
-        <div className="text-center p-4" onClick={notify}>
+        <div className="text-center m-5 " onClick={notify}>
+          <h2>TOTAL= $ {totalPrice()}</h2>
           <button className="buy__btn " onClick={handledClick}>
             Confirm order
           </button>
+          
         </div>
       )}
+      <div className="text-center">-----------------------------------------</div>
       <div className="text-center p-4">
+        
         <Link to="/">
-          <button className="buy__btn text-center pb-5 p-5">
+          <button className="buy__btn text-center p-2 m-4">
             Back to home
           </button>
         </Link>
